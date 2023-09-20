@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/icon.png" />
+    <link rel="stylesheet" type="text/css" href="./src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+      
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+      }
+      
+      .todo-container {
+        width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      
+      .todo-item {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #f9f1f1;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .task-name {
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      
+      .task-category {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 5px;
+      }
+      
+      .task-importance {
+        font-weight: bold;
+        color: #ff6f6f;
+        margin-bottom: 5px;
+      }
+      
+      .task-desc {
+        margin-top: 5px;
+        color: #555;
+      }
+      
+      .task-date {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #999;
+      }
+      
+      .new-task-form {
+        display: flex;
+        margin-top: 20px;
+      }
+      
+      .new-task-input {
+        flex-grow: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      
+      .new-task-submit {
+        margin-left: 10px;
+        padding: 8px 15px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      
+      /* Colors for different todo items */
+      .todo-item:nth-child(1) {
+        background-color: #fff3f3;
+      }
+      
+      .todo-item:nth-child(2) {
+        background-color: #f3f7ff;
+      }
+      
+      .todo-item:nth-child(3) {
+        background-color: #f7fff3;
+      }
+    </style>  
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
